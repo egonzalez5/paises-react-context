@@ -9,7 +9,7 @@ const Africa = () => {
 
     useEffect(() => {
         //setBusqueda('africa')
-        setBusqueda('africa');
+        setBusqueda('africas');
         
     }, [])
     console.log(busqueda);
