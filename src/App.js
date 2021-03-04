@@ -6,10 +6,10 @@ import axios from 'axios'
 function App() {
 
   const [consultaPais, setConsultaPais] = useState([]);
-  const [busqueda, setBusqueda] = useState({ continente:'',  });
+  const [busqueda, setBusqueda] = useState({ continente:'' });
   const [consultar, setConsultar] = useState(false);
   
-  //const {continente} = busqueda;
+  const {continente} = busqueda;
 
   useEffect(() => {
 
@@ -17,17 +17,18 @@ function App() {
 
       if(consultar){
       //const url = 'https://restcountries.eu/rest/v2/all';
-      const url =  `https://restcountries.eu/rest/v2/region/americas`;
-      //const url =  `https://restcountries.eu/rest/v2/region/${continente}`;
+      
+      //const url =  `https://restcountries.eu/rest/v2/region/americas`;
+      const url =  `https://restcountries.eu/rest/v2/region/${continente}`;
       const resultado = await axios.get(url);
       
       //setConsultaPais(consultaPais.data);
       setConsultaPais(resultado.data);
       setConsultar(false);
 
+      
+      console.log(continente);
       console.log(resultado.data);
-      console.log(busqueda);
-
     
   }
 }
@@ -42,6 +43,7 @@ function App() {
             busqueda,
             setBusqueda,
             setConsultar,
+            consultar
             
         }}>
 

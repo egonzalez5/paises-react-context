@@ -7,30 +7,35 @@ import {
   } from 'react-router-dom';
 
 import { NavBar } from './Navbar';
-
-import { America } from './America';
-import { LoginScreen } from './LoginScreen';
 import { HomeScreen } from './HomeScreen';
+
+import America from './America';
 import Africa from './Africa';
+import Asia from './Asia';
+import Europa from './Europa';
+import Oceania from './Oceania';
 
 export const AppRouter = () => {
     return (
         <Router>
-            <div>
+            <div className="container">
+                <div className="row">
+                    <div className="col-md-12">
+                    <NavBar />
                 
-                <NavBar />
+                        <Switch>
+                            
+                            <Route exact path="/" component={ HomeScreen } />
+                            
+                            <Route exact path="/africa" component={ Africa } />
+                            <Route exact path="/america" component={ America } />
+                            <Route exact path="/asia" component={ Asia } />
+                            <Route exact path="/europa" component={ Europa } />
+                            <Route exact path="/oceania" component={ Oceania } />
+                            <Redirect to="/" />
 
-                <div className="container">
-                    <Switch>
-                        <Route exact path="/" component={ HomeScreen } />
-
-                        <Route exact path="/america" component={ America } />
-                        <Route exact path="/africa" component={ Africa } />
-                        <Route exact path="/login" component={ LoginScreen } />
-                        
-                        <Redirect to="/" />
-
-                    </Switch>
+                        </Switch>
+                    </div>
                 </div>
             </div>
         </Router>

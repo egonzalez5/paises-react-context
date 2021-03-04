@@ -10,9 +10,13 @@ export const NavBar = () => {
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div className="navbar-nav">
                     <NavLink exact activeClassName="active" to="/" className="nav-item nav-link"> Home </NavLink>
-                    <NavLink exact activeClassName="active" to="/america" className="nav-item nav-link"> America </NavLink>
+                    
                     <NavLink exact activeClassName="active" to="/africa" className="nav-item nav-link"> Africa </NavLink>
-                    <NavLink exact activeClassName="active" to="/login" className="nav-item nav-link"> Login</NavLink>
+                    <NavLink exact activeClassName="active" to="/america" className="nav-item nav-link"> America </NavLink>
+                    <NavLink exact activeClassName="active" to="/asia" className="nav-item nav-link"> Asia </NavLink>
+                    <NavLink exact activeClassName="active" to="/europa" className="nav-item nav-link"> Europa </NavLink>
+                    <NavLink exact activeClassName="active" to="/oceania" className="nav-item nav-link"> Oceania </NavLink>
+                    
                 </div>
             </div>
         </nav>
