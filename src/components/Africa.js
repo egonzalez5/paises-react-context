@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect } from 'react'
 import ListadoPaises from './ListadoPaises';
 import { PaisContext } from './PaisContext';
 
@@ -23,13 +23,6 @@ const Africa = () => {
     return (
         <div>
             <h1>Desde Africa</h1>
-            <input
-                type="text"
-                placeholder="buscar..."
-                onChange={(event) => {
-                    setSearch(event.target.value);
-                }}
-            />
             <ListadoPaises />
         </div>
     )

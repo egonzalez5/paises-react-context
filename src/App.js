@@ -27,8 +27,8 @@ function App() {
       setConsultaPais(resultado.data);
       setConsultar(false);
       
-      const newContinente = {continente: ''};
-      setBusqueda(newContinente);
+      //const newContinente = {continente: ''};
+      //setBusqueda(newContinente);
         
 
       //console.log(continente);

@@ -1,11 +1,11 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import { PaisContext } from './PaisContext';
 import Pais from './Pais';
 
 
 const ListadoPaises = () => {
 
-    const {consultaPais, search, setSearch } = useContext(PaisContext);
+    const {consultaPais, search} = useContext(PaisContext);
     
     /* return ( 
         <div className="col-12 p-5 row">
@@ -30,6 +30,7 @@ const ListadoPaises = () => {
                     key={pais.numericCode}
                     pais={pais}
                 />
+                
             ))}
         </div>
      );

@@ -7,8 +7,8 @@ import {
   } from 'react-router-dom';
 
 import { NavBar } from './Navbar';
-import { HomeScreen } from './HomeScreen';
 
+import HomeScreen from './HomeScreen';
 import America from './America';
 import Africa from './Africa';
 import Asia from './Asia';
