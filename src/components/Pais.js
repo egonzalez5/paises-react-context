@@ -8,7 +8,7 @@ const Pais = ({pais}) => {
     const formatearNumero = new Intl.NumberFormat('us');
 
     return ( 
-        <div className="col-md-4 mb-3">
+        <div className="col-md-3 mb-3 ">
             <div className="card">
             
                 

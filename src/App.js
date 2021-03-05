@@ -8,8 +8,9 @@ function App() {
   const [consultaPais, setConsultaPais] = useState([]);
   const [busqueda, setBusqueda] = useState({ continente:'' });
   const [consultar, setConsultar] = useState(false);
-  
   const {continente} = busqueda;
+
+  const [search, setSearch] = useState("")
 
   useEffect(() => {
 
@@ -25,17 +26,21 @@ function App() {
       //setConsultaPais(consultaPais.data);
       setConsultaPais(resultado.data);
       setConsultar(false);
-
       
-      console.log(continente);
-      console.log(resultado.data);
+      const newContinente = {continente: ''};
+      setBusqueda(newContinente);
+        
+
+      //console.log(continente);
+      //console.log(resultado.data);
+      
     
   }
 }
     consultarAPI();
     // eslint-disable-next-line
   }, [consultar])
-
+  
     return (
         <PaisContext.Provider value={{
 
@@ -43,7 +48,9 @@ function App() {
             busqueda,
             setBusqueda,
             setConsultar,
-            consultar
+            consultar,
+            search,
+            setSearch
             
         }}>
 
