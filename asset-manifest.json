@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/paises-react-context/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/paises-react-context/static/js/main.d2f8190a.chunk.js",
+    "main.js.map": "/paises-react-context/static/js/main.d2f8190a.chunk.js.map",
+    "runtime-main.js": "/paises-react-context/static/js/runtime-main.322735a8.js",
+    "runtime-main.js.map": "/paises-react-context/static/js/runtime-main.322735a8.js.map",
+    "static/js/2.24f57c3e.chunk.js": "/paises-react-context/static/js/2.24f57c3e.chunk.js",
+    "static/js/2.24f57c3e.chunk.js.map": "/paises-react-context/static/js/2.24f57c3e.chunk.js.map",
+    "static/js/3.58c72ddb.chunk.js": "/paises-react-context/static/js/3.58c72ddb.chunk.js",
+    "static/js/3.58c72ddb.chunk.js.map": "/paises-react-context/static/js/3.58c72ddb.chunk.js.map",
+    "index.html": "/paises-react-context/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/paises-react-context/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.24f57c3e.chunk.js.LICENSE.txt": "/paises-react-context/static/js/2.24f57c3e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.322735a8.js",
+    "static/js/2.24f57c3e.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.d2f8190a.chunk.js"
+  ]
+}
