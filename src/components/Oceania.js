@@ -4,7 +4,7 @@ import ListadoPaises from './ListadoPaises';
 
 const Oceania = () => {
 
-    const {setBusqueda, setConsultar } = useContext(PaisContext);
+    const {setBusqueda, setConsultar, setSearch } = useContext(PaisContext);
 
 
     
@@ -12,6 +12,7 @@ const Oceania = () => {
     
 
     useEffect(() => { 
+        setSearch("");
         setBusqueda(newContinente);
         setConsultar(true);
     // eslint-disable-next-line 

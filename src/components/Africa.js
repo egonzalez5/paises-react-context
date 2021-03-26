@@ -5,14 +5,14 @@ import { PaisContext } from './PaisContext';
 
 const Africa = () => {
 
-    const {setBusqueda, setConsultar, setSearch } = useContext(PaisContext);
+    const {setBusqueda, setConsultar, setSearch} = useContext(PaisContext);
     
 
     const newContinente = {continente: 'africa'};
     
 
     useEffect(() => { 
-        
+        setSearch("");
         setBusqueda(newContinente);
         setConsultar(true);
     // eslint-disable-next-line 

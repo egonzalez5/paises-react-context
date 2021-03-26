@@ -3,7 +3,7 @@ import { PaisContext } from './PaisContext';
 import ListadoPaises from './ListadoPaises';
 const America = () => {
 
-    const {setBusqueda, setConsultar } = useContext(PaisContext);
+    const {setBusqueda, setConsultar,setSearch } = useContext(PaisContext);
 
 
     
@@ -11,6 +11,7 @@ const America = () => {
     
 
     useEffect(() => { 
+        setSearch("");
         setBusqueda(newContinente);
         setConsultar(true);
     // eslint-disable-next-line 

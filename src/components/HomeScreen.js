@@ -6,7 +6,7 @@ import { Formulario } from './Formulario';
 
 const HomeScreen = () => {
 
-    const {setBusqueda, setConsultar, setSearch  } = useContext(PaisContext);
+    const {setBusqueda, setConsultar, setSearch} = useContext(PaisContext);
 
 
     
@@ -35,10 +35,13 @@ const HomeScreen = () => {
                 type="search"
                 aria-label="Search"
                 placeholder="Buscar..."
+                
                 onChange={(event) => {
                     setSearch(event.target.value);
                 }}
             />
+
+
             </form>
             </div>
             

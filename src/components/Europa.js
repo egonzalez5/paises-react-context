@@ -4,14 +4,15 @@ import ListadoPaises from './ListadoPaises';
 
 const Europa = () => {
 
-    const {setBusqueda, setConsultar } = useContext(PaisContext);
+    const {setBusqueda, setConsultar, setSearch } = useContext(PaisContext);
 
 
     
     const newContinente = {continente: 'europe'};
     
 
-    useEffect(() => { 
+    useEffect(() => {
+        setSearch("");
         setBusqueda(newContinente);
         setConsultar(true);
     // eslint-disable-next-line 

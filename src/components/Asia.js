@@ -4,7 +4,7 @@ import ListadoPaises from './ListadoPaises';
 
 const Asia = () => {
 
-    const {setBusqueda, setConsultar } = useContext(PaisContext);
+    const {setBusqueda, setConsultar, setSearch } = useContext(PaisContext);
 
 
     
@@ -12,6 +12,7 @@ const Asia = () => {
     
 
     useEffect(() => { 
+        setSearch("");
         setBusqueda(newContinente);
         setConsultar(true);
     // eslint-disable-next-line 

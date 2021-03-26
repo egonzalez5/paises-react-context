@@ -4,11 +4,11 @@ import Error from './Error';
 
 export const Formulario = () => {
 
-    const {busqueda, setBusqueda, setConsultar} = useContext( PaisContext );
+    const {busqueda, setBusqueda, setConsultar, setSearch} = useContext( PaisContext );
     const [error, setError] = useState(false);
 
     const {continente} = busqueda;
-
+    const newSearch = '';
     
 
     const handleChange = e => {
@@ -28,7 +28,9 @@ export const Formulario = () => {
         setError(false);
 
         //enviar informacion a componente principal
+        setSearch(newSearch);
         setConsultar(true);
+        
     }
 
 
